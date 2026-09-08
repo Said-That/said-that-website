@@ -1,4 +1,4 @@
-Fix Paystack key syntax import React, { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { ShoppingBag, X, ArrowRight, ArrowLeft, Menu, Plus, Minus, Ruler } from "lucide-react";
 
 // ─── CONSTANTS ───────────────────────────────────────────────────────────────
