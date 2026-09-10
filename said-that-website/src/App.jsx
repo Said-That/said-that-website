@@ -510,7 +510,7 @@ export default function App() {
     setPayLoading(true);
     const ref = "ST-"+Date.now();
     const handler = window.PaystackPop.setup({
-      key:pk_live_ae616403cf5fa429a52b3e0dc6ed6b268c65412c
+      key:"pk_live_ae616403cf5fa429a52b3e0dc6ed6b268c65412c",
       email:orderDetails.email, amount:total*100, currency:"ZAR", ref,
       metadata:{ custom_fields:[
         { display_name:"Name",    variable_name:"name",    value:orderDetails.name },
