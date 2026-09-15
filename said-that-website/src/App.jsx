@@ -112,7 +112,7 @@ const PRODUCTS = [
 const GARMENT_COLORS = [
   { name: "Black",    hex: "#1A1A1A", hasPhoto: true  },
   { name: "White",    hex: "#F8F8F6", hasPhoto: true  },
-  { name: "Charcoal", hex: "#3D3D3D", hasPhoto: false },
+  { name: "Charcoal", hex: "#3D3D3D", hasPhoto: true },
   { name: "Navy",     hex: "#1C2951", hasPhoto: true  },
   { name: "Stone",    hex: "#C4B49A", hasPhoto: true  },
   { name: "Olive",    hex: "#5C5E3A", hasPhoto: true  },
