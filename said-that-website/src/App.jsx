@@ -1136,7 +1136,7 @@ export default function App() {
           <div>
             <p style={{ ...serif, fontStyle:"italic", fontSize:18, color:TOBACCO, fontWeight:700, margin:"0 0 6px" }}>Said That.</p>
             <p style={{ ...mono, fontSize:11, color:LEATHER, letterSpacing:1 }}>Four Decades · One Tee</p>
-            <p style={{ ...mono, fontSize:11, color:LEATHER, marginTop:4 }}>hello@saidthat.shop</p>
+            <p style={{ ...mono, fontSize:11, color:LEATHER, marginTop:4 }}>orders@saidthat.shop</p>
           </div>
           <div className="flex flex-wrap gap-6" style={{ ...mono, fontSize:11, color:LEATHER, letterSpacing:2, textTransform:"uppercase", alignItems:"flex-start" }}>
             <button onClick={()=>goShop("all")}>Shop</button>
