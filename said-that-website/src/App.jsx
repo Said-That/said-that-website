@@ -800,12 +800,12 @@ export default function App() {
     padding: "16px 20px",
     margin: "16px 0",
   }}>
-    <p style={{ ...serif, fontWeight: 700, color: "#5C2634", fontSize: 15, marginBottom: 8 }}>
-      R50 from every HerSay. item goes directly to Women For Change.
+    <p style={{ fontFamily: "'Fraunces', serif", fontWeight: 700, fontStyle: "italic", color: "#5C2634", fontSize: 17, marginBottom: 8 }}>
+  R50 from every HerSay. item goes directly to Women For Change.
     </p>
-    <p style={{ ...body, fontSize: 13, color: TOBACCO, lineHeight: 1.6, marginBottom: 8 }}>
-      South Africa is living through what's been called a shadow pandemic — gender-based violence against women and children, happening at a scale that's impossible to ignore once you start paying attention. This collection is my way of putting money where the words are. R50 from every item goes straight to Women For Change.
-    </p>
+    <p style={{ fontFamily: "'Fraunces', serif", fontWeight: 600, fontSize: 14, color: TOBACCO, lineHeight: 1.6, marginBottom: 8 }}>
+  South Africa is living through what's been called a shadow pandemic, gender-based violence against women and children, happening at a scale that's impossible to ignore once you start paying attention. This collection is my way of putting money where the words are. R50 from every item goes straight to Women For Change.
+</p>
     <p style={{ ...body, fontSize: 12, color: TOBACCO, lineHeight: 1.5, marginBottom: 8, opacity: 0.85 }}>
       Women For Change is a registered South African NPO (Reg No: 219-909)
       working to end gender-based violence and femicide. Donation totals
