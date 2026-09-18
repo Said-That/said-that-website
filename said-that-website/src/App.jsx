@@ -495,7 +495,7 @@ export default function App() {
 
   useEffect(()=>{
     const link = document.createElement("link");
-    link.href = "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Libre+Baskerville:wght@400;700&family=Bungee&family=Monoton&family=Righteous&family=Bangers&family=Permanent+Marker&family=Luckiest+Guy&family=Baloo+2:wght@700&family=Bubblegum+Sans&family=Fredoka:wght@600;700&family=Archivo+Black&family=Space+Grotesk:wght@700&family=Press+Start+2P...&family=Abril+Fatface&family=Bebas+Neue:wght@400&family=Mountains+of+Christmas:wght@700&display=swap";
+    link.href = "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Libre+Baskerville:wght@400;700&family=Bungee&family=Monoton&family=Righteous&family=Bangers&family=Permanent+Marker&family=Luckiest+Guy&family=Baloo+2:wght@700&family=Bubblegum+Sans&family=Fredoka:wght@600;700&family=Archivo+Black&family=Space+Grotesk:wght@700&family=Press+Start+2P&family=Fraunces:wght@600;700&family=Rye&family=Butcherman&family=Creepster&family=Abril+Fatface&family=Bebas+Neue:wght@400&family=Mountains+of+Christmas:wght@700&display=swap";
     link.rel  = "stylesheet";
     document.head.appendChild(link);
     const ps  = document.createElement("script");
