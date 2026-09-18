@@ -110,7 +110,6 @@ const PRODUCTS = [
   { id: 38, name: "No cap.",             type: "Cap", price: 349, collection: "genz" },
   { id: 39, name: "Mid.",                type: "Tee", price: 449, collection: "genz" },
   { id: 40, name: "Mid.",                type: "Cap", price: 349, collection: "genz" },
-];
 { id: 41, name: "Not asking twice.", type: "Tee", price: 449, collection: "hersay" },
 { id: 42, name: "Not asking twice.", type: "Cap", price: 349, collection: "hersay" },
 { id: 43, name: "My name, not your business.", type: "Tee", price: 449, collection: "hersay" },
