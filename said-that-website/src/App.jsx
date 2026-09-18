@@ -56,6 +56,9 @@ const ERA_COLORS = {
 };
 
 const COLLECTIONS = {
+  hersay: { label: "HerSay.", accent: "#5C2634", text: "#5C2634", bg: CREAM, border: "#5C2634" },
+  halloween: { label: "Halloween", accent: "#B5651D", text: "#B5651D", bg: CREAM, border: "#B5651D" },
+  christmas: { label: "Christmas", accent: "#7A2B2B", text: "#7A2B2B", bg: CREAM, border: "#7A2B2B" },
   "80s":   { label: "The 80s",   accent: "#2C2416", text: "#2C2416", bg: CREAM, border: "#2C2416" },
   "90s":   { label: "The 90s",   accent: "#8B6347", text: "#8B6347", bg: CREAM, border: "#8B6347" },
   "2000s": { label: "The 2000s", accent: "#C9A84C", text: "#C9A84C", bg: CREAM, border: "#C9A84C" },
@@ -64,8 +67,8 @@ const COLLECTIONS = {
 
 const PRODUCTS = [
   // ── The 80s ──────────────────────────────────────────────
-  { id:  1, name: "Gag me with a spoon.", type: "Tee", price: 449, collection: "80s" },
-  { id:  2, name: "Gag me with a spoon.", type: "Cap", price: 349, collection: "80s" },
+  { id:  1, name: "Totally tubular.", type: "Tee", price: 449, collection: "80s" },
+  { id:  2, name: "Totally tubular.", type: "Cap", price: 349, collection: "80s" },
   { id:  3, name: "Rad.",                 type: "Tee", price: 449, collection: "80s" },
   { id:  4, name: "Rad.",                 type: "Cap", price: 349, collection: "80s" },
   { id:  5, name: "Gnarly.",              type: "Tee", price: 449, collection: "80s" },
@@ -108,7 +111,37 @@ const PRODUCTS = [
   { id: 39, name: "Mid.",                type: "Tee", price: 449, collection: "genz" },
   { id: 40, name: "Mid.",                type: "Cap", price: 349, collection: "genz" },
 ];
-
+{ id: 41, name: "Not asking twice.", type: "Tee", price: 449, collection: "hersay" },
+{ id: 42, name: "Not asking twice.", type: "Cap", price: 349, collection: "hersay" },
+{ id: 43, name: "My name, not your business.", type: "Tee", price: 449, collection: "hersay" },
+{ id: 44, name: "My name, not your business.", type: "Cap", price: 349, collection: "hersay" },
+{ id: 45, name: "Loud on purpose.", type: "Tee", price: 449, collection: "hersay" },
+{ id: 46, name: "Loud on purpose.", type: "Cap", price: 349, collection: "hersay" },
+{ id: 47, name: "Raised by lionesses.", type: "Tee", price: 449, collection: "hersay" },
+{ id: 48, name: "Raised by lionesses.", type: "Cap", price: 349, collection: "hersay" },
+{ id: 49, name: "We say her name.", type: "Tee", price: 449, collection: "hersay" },
+{ id: 50, name: "We say her name.", type: "Cap", price: 349, collection: "hersay" },
+{ id: 51, name: "Spooky season, mid effort.", type: "Tee", price: 449, collection: "halloween" },
+{ id: 52, name: "Spooky season, mid effort.", type: "Cap", price: 349, collection: "halloween" },
+{ id: 53, name: "Powered by candy and chaos.", type: "Tee", price: 449, collection: "halloween" },
+{ id: 54, name: "Powered by candy and chaos.", type: "Cap", price: 349, collection: "halloween" },
+{ id: 55, name: "Treat yourself, skip the trick.", type: "Tee", price: 449, collection: "halloween" },
+{ id: 56, name: "Treat yourself, skip the trick.", type: "Cap", price: 349, collection: "halloween" },
+{ id: 57, name: "October made me do it.", type: "Tee", price: 449, collection: "halloween" },
+{ id: 58, name: "October made me do it.", type: "Cap", price: 349, collection: "halloween" },
+{ id: 59, name: "Cursed, but make it cute.", type: "Tee", price: 449, collection: "halloween" },
+{ id: 60, name: "Cursed, but make it cute.", type: "Cap", price: 349, collection: "halloween" },
+{ id: 61, name: "Present and accounted for.", type: "Tee", price: 449, collection: "christmas" },
+{ id: 62, name: "Present and accounted for.", type: "Cap", price: 349, collection: "christmas" },
+{ id: 63, name: "Running on eggnog and spite.", type: "Tee", price: 449, collection: "christmas" },
+{ id: 64, name: "Running on eggnog and spite.", type: "Cap", price: 349, collection: "christmas" },
+{ id: 65, name: "I said what I said. Merry Christmas.", type: "Tee", price: 449, collection: "christmas" },
+{ id: 66, name: "I said what I said. Merry Christmas.", type: "Cap", price: 349, collection: "christmas" },
+{ id: 67, name: "Here for the food, tolerating the rest.", type: "Tee", price: 449, collection: "christmas" },
+{ id: 68, name: "Here for the food, tolerating the rest.", type: "Cap", price: 349, collection: "christmas" },
+{ id: 69, name: "Ask me again in January.", type: "Tee", price: 449, collection: "christmas" },
+{ id: 70, name: "Ask me again in January.", type: "Cap", price: 349, collection: "christmas" }, 
+];
 const GARMENT_COLORS = [
   { name: "Black",    hex: "#1A1A1A", hasPhoto: true  },
   { name: "White",    hex: "#F8F8F6", hasPhoto: true  },
@@ -136,6 +169,21 @@ const FABRICS = [
 // Top 3 trending fonts per era — each font carries a `scale` used to keep
 // wide/heavy display faces legible at small mockup sizes.
 const FONTS_BY_ERA = {
+  hersay: [
+  { id: "fraunces", label: "Fraunces", family: "'Fraunces', serif", note: "Warm, dignified serif — sentence case", scale: 1 },
+  { id: "playfair-bold", label: "Playfair Display Bold", family: "'Playfair Display', serif", note: "Matches the Said That. wordmark", scale: 0.95 },
+  { id: "baskerville-bold", label: "Libre Baskerville Bold", family: "'Libre Baskerville', serif", note: "Same font as the site's body text — quietest option", scale: 0.9 },
+],
+halloween: [
+  { id: "rye", label: "Rye", family: "'Rye', serif", note: "Vintage bold serif — spooky without kitsch", scale: 1 },
+  { id: "butcherman", label: "Butcherman", family: "'Butcherman', display", note: "Mid-ground horror styling, still legible", scale: 1 },
+  { id: "creepster", label: "Creepster", family: "'Creepster', display", note: "Full horror-movie energy, if you want to lean in", scale: 1.1 },
+],
+christmas: [
+  { id: "abril", label: "Abril Fatface", family: "'Abril Fatface', serif", note: "Bold and elegant — festive without cheesy", scale: 0.9 },
+  { id: "mountains", label: "Mountains of Christmas", family: "'Mountains of Christmas', serif", note: "Warm, handwritten holiday feel", scale: 1 },
+  { id: "bebas", label: "Bebas Neue", family: "'Bebas Neue', sans-serif", note: "Clean, condensed, deadpan-modern", scale: 1 },
+],
   "80s": [
     { id: "bungee",    label: "Bungee",    family: "'Bungee', sans-serif",    note: "Bold retro-arcade block caps",     scale: 0.85 },
     { id: "monoton",   label: "Monoton",   family: "'Monoton', cursive",      note: "Neon-tube sign script",            scale: 0.72 },
@@ -448,7 +496,7 @@ export default function App() {
 
   useEffect(()=>{
     const link = document.createElement("link");
-    link.href = "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Libre+Baskerville:wght@400;700&family=Bungee&family=Monoton&family=Righteous&family=Bangers&family=Permanent+Marker&family=Luckiest+Guy&family=Baloo+2:wght@700&family=Bubblegum+Sans&family=Fredoka:wght@600;700&family=Archivo+Black&family=Space+Grotesk:wght@700&family=Press+Start+2P&display=swap";
+    link.href = "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Libre+Baskerville:wght@400;700&family=Bungee&family=Monoton&family=Righteous&family=Bangers&family=Permanent+Marker&family=Luckiest+Guy&family=Baloo+2:wght@700&family=Bubblegum+Sans&family=Fredoka:wght@600;700&family=Archivo+Black&family=Space+Grotesk:wght@700&family=Press+Start+2P...&family=Abril+Fatface&family=Bebas+Neue:wght@400&family=Mountains+of+Christmas:wght@700&display=swap";
     link.rel  = "stylesheet";
     document.head.appendChild(link);
     const ps  = document.createElement("script");
@@ -745,6 +793,36 @@ export default function App() {
                 "{selectedProduct.name}"
               </h1>
               <p style={{ ...serif, fontSize:20, color:GOLD, margin:"0 0 28px" }}>R{selectedProduct.price}</p>
+              {selectedProduct.collection === "hersay" && (
+  <div style={{
+    background: "#F2EDE4",
+    border: "2px solid #5C2634",
+    borderRadius: 8,
+    padding: "16px 20px",
+    margin: "16px 0",
+  }}>
+    <p style={{ ...serif, fontWeight: 700, color: "#5C2634", fontSize: 15, marginBottom: 8 }}>
+      R50 from every HerSay. item goes directly to Women For Change.
+    </p>
+    <p style={{ ...body, fontSize: 13, color: TOBACCO, lineHeight: 1.6, marginBottom: 8 }}>
+      South Africa is living through what's been called a shadow pandemic — gender-based violence against women and children, happening at a scale that's impossible to ignore once you start paying attention. This collection is my way of putting money where the words are. R50 from every item goes straight to Women For Change.
+    </p>
+    <p style={{ ...body, fontSize: 12, color: TOBACCO, lineHeight: 1.5, marginBottom: 8, opacity: 0.85 }}>
+      Women For Change is a registered South African NPO (Reg No: 219-909)
+      working to end gender-based violence and femicide. Donation totals
+      are shared publicly after each drop.
+    </p>
+    
+      <a
+      href="https://womenforchange.co.za"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ fontSize: 12, color: "#5C2634", textDecoration: "underline" }}
+    >
+      Learn more about Women For Change →
+    </a>
+  </div>
+)}
 
               {!isCap && (
                 <>
