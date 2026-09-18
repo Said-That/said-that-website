@@ -160,9 +160,9 @@ const CAP_COLORS = [
 
 // Fabrics — maxSize determines if 4XL is available
 const FABRICS = [
-  { name: "165gsm Everyday",    note: "100% Combed Cotton · relaxed unisex fit",        maxSize: "4XL", sizes: ["XS","S","M","L","XL","2XL","3XL","4XL"] },
-  { name: "180gsm Heavyweight", note: "100% Combed Cotton · boxy oversized fit",         maxSize: "3XL", sizes: ["S","M","L","XL","2XL","3XL"] },
-  { name: "160gsm Premium",     note: "100% Combed Cotton · modern slim-oversized cut",  maxSize: "4XL", sizes: ["XS","S","M","L","XL","2XL","3XL","4XL"] },
+  { name: "165gsm Everyday", note: "100% Combed Cotton · relaxed unisex fit", maxSize: "4XL", sizes: ["XS","S","M","L"], priceAdjust: -20 },
+  { name: "180gsm Heavyweight", note: "100% Combed Cotton · boxy oversized fit", maxSize: "3XL", sizes: ["S","M","L","XL"], priceAdjust: 10 },
+  { name: "160gsm Premium", note: "100% Combed Cotton · modern slim-oversized cut", maxSize: "4XL", sizes: ["XS","S","M","L"], priceAdjust: 20 },
 ];
 
 // Top 3 trending fonts per era — each font carries a `scale` used to keep
@@ -537,7 +537,7 @@ export default function App() {
       if (ex) return c.map(i=>i.key===key?{...i,qty:i.qty+1}:i);
       return [...c,{
         key, id:selectedProduct.id, name:selectedProduct.name,
-        type:selectedProduct.type, price:selectedProduct.price,
+        type:selectedProduct.type, price:selectedProduct.price+ (isCap?0:(fabric?.priceAdjust||0)),
         size:isCap?"One size":size,
         garmentColor:color,
         fabric:isCap?null:fabric.name,
@@ -791,7 +791,7 @@ export default function App() {
               <h1 style={{ ...serif, fontSize:26, fontStyle:"italic", color:TOBACCO, margin:"0 0 6px" }}>
                 "{selectedProduct.name}"
               </h1>
-              <p style={{ ...serif, fontSize:20, color:GOLD, margin:"0 0 28px" }}>R{selectedProduct.price}</p>
+              <p style={{ ...serif, fontSize:20, color:GOLD, margin:"0 0 28px" }}>R{selectedProduct.price + (isCap?0:(fabric?.priceAdjust||0))}</p>
               {selectedProduct.collection === "hersay" && (
   <div style={{
     background: "#F2EDE4",
@@ -951,7 +951,7 @@ export default function App() {
 
               <button onClick={addToCart}
                 style={{ background:TOBACCO, color:CREAM, padding:"14px 24px", ...mono, fontSize:12, letterSpacing:2, textTransform:"uppercase", width:"100%" }}>
-                Add to cart — R{selectedProduct.price}
+                Add to cart — R{selectedProduct.price + (isCap?0:(fabric?.priceAdjust||0))}
               </button>
               <p style={{ ...mono, fontSize:10, color:LEATHER, marginTop:14, lineHeight:1.7, letterSpacing:0.5 }}>
                 Printed to order · 5–7 working day production · R100 express courier · Eco-friendly inks
