@@ -1099,7 +1099,7 @@ export default function App() {
           {[
             {q:"How long does delivery take?", a:"Orders are printed to order — 5–7 working days production, then express courier within 72 hours to most areas in South Africa."},
             {q:"How much is shipping?", a:"Flat rate R100 express courier to anywhere in South Africa."},
-            {q:"Can I return or exchange?", a:"Every item is printed specifically for you so we don't accept returns for change of mind. If your item arrives with a garment flaw or printing error, we'll replace it. Email hello@saidthat.shop with a photo."},
+            {q:"Can I return or exchange?", a:"Every item is printed specifically for you so we don't accept returns for change of mind. If your item arrives with a garment flaw or printing error, we'll replace it. Email orders@saidthat.shop with a photo."},
             {q:"What sizes are available?", a:"Tees come in XS–4XL depending on fabric (the 180gsm Heavyweight runs S–3XL). Caps are one size with an adjustable strap. See the size guide on any product page."},
             {q:"What's the print quality like?", a:"DTG (Direct-to-Garment) printing on 100% premium combed cotton. Vibrant, detailed, wash-resistant. All inks are eco-friendly and water-based."},
             {q:"Can I choose where the print goes?", a:"Yes — every product page has a placement selector (left chest, right chest, full front, full back, left sleeve, right sleeve on tees; front, left, or right on caps). The mockup updates live."},
